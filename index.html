@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="side-container">
@@ -59,19 +60,19 @@
                 <div class="frow1">
                     <div class="inputA">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" minlength="8">
                     </div>
     
                     <div class="inputA">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword"> 
+                        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8"> 
                     </div>
                 </div>
 
         </div>
         <div class="submit">
-                <button type="submit">Create Account</button>
-                <div>Already have an account? <button>Log in</button></div>
+                <button class='crete' type="submit" onclick="passwordConfirmation()">Create Account</button>
+                <div>Already have an account? <a class="login">Log in</a></div>
             </form>
         </div>
     </div>
